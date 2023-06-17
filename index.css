@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title{
+    display: inline;
+    font-family: sans-serif;
+    height: 50px;
+    width: 50px;
+}
+
+.shop{
+   height: 50px;
+   width: 50px;
+}
+
+#search{
+}
+
