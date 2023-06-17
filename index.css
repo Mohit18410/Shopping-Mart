@@ -12,10 +12,19 @@
 }
 
 .shop{
-   height: 50px;
+   height: 30px;
    width: 50px;
 }
 
-#search{
+#navBox{
+    list-style-type: none;
 }
 
+
+.navItems{
+    display: inline;
+}
+
+#mainImage{
+    height: 50px;
+}
