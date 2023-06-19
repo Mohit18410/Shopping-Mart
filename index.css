@@ -28,3 +28,13 @@
 #mainImage{
     height: 50px;
 }
+
+.product1Image ,.product2Image ,.product3Image ,.product4Image{
+    height: 50px;
+    width: 50px;
+} 
+
+.founderImage{
+    height: 50px;
+    width: 50px;
+}
