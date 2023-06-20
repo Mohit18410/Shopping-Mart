@@ -2,31 +2,119 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.title{
-    display: inline;
     font-family: sans-serif;
-    height: 50px;
-    width: 50px;
+    color: rgb(47, 47, 47);
 }
 
+/* Styling Header */
+
+header{
+    padding: 18px 0;
+    background-color: #21D4FD;
+background-image: linear-gradient(74deg, #21D4FD 0%, #B721FF 100%);
+    display: flex;
+align-items: center;
+gap: 15px;
+}
+
+.titlebox{
+    flex-basis: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.searchbox{
+    flex-grow: 1;
+    align-self: center;
+}
+
+
+.signbox{
+    flex-basis: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styling Title box */
+.title{
+    font-size: 35px;
+    color: white;
+}
 .shop{
-   height: 30px;
-   width: 50px;
+    height: 30px;
+    fill: white ;
 }
 
-#navBox{
-    list-style-type: none;
+/* Styling Search Box */
+/* #searchbar{
+
+} */
+
+
+/* Styling Sign Box */
+#signin,#signup{
+    color: rgb(42, 42, 42);
+    background-color: #fff;
+    font-size: 15px;
+    flex-basis: 48%;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 
+
+/* Styling Nav Bar */
+nav{
+    background-color: rgb(245, 245, 245);
+}
+
+#navbox{
+    padding:0px 18%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
 .navItems{
+    padding: 12px;
     display: inline;
+    font-size: 18px;
+    cursor: pointer;
 }
 
+.navItems:hover{
+    color: white;
+    background-color: rgb(57, 57, 57);
+}
+
+/* Styling Main Component */
+
+
+/* Styling Motto */
+
+.mottobox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+}
+#motto{
+    align-self: end;
+    font-size: 60px;
+    line-height: 55px;
+}
+#mottopara{
+    font-size: 18px;
+    line-height: 20px;
+}
 #mainImage{
-    height: 50px;
+    grid-column: 2/3 ;
+    grid-row: 1/3;
+    justify-self: stretch;
 }
 
 .product1Image ,.product2Image ,.product3Image ,.product4Image{
