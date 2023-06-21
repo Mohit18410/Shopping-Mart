@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    color: rgb(47, 47, 47);
+    color: rgb(59, 58, 58);
 }
 
 /* Styling Header */
@@ -101,6 +101,7 @@ nav{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     row-gap: 10px;
+    margin-bottom: 25px;
 }
 #motto{
     align-self: end;
@@ -117,11 +118,86 @@ nav{
     justify-self: stretch;
 }
 
-.product1Image ,.product2Image ,.product3Image ,.product4Image{
-    height: 50px;
-    width: 50px;
+/* Styling best selling items */
+.productlist{
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 60px repeat(4,250px);
+    row-gap: 30px;
+    column-gap: 5px;
+    margin-bottom: 60px;
+}
+
+.productbox{
+    background-color:rgb(251, 251, 251);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+    cursor: pointer;
+}
+
+.specbox{
+margin-left:20px ;    
+}
+
+.bestsellingitems{
+    grid-column: 1/-1;
+    justify-self: center;
+    align-self: center;
+    font-size: 30px;
+}    
+
+.productImage{
+justify-self: stretch;        
+align-self: stretch;
+border-width: 5px;
+cursor: pointer;
 } 
 
+.pname{
+    font-size: 30px;
+    margin: 10px 5px;
+}        
+
+.spec{
+    font-size: 25px;
+    margin-bottom:5px ;
+}
+
+.speclist{
+    margin-bottom: 8px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.p1,.p2,.p3,.p4{
+    list-style-type: none;
+}
+
+.plist{
+    color: rgb(101, 100, 100);
+}    
+
+.price{
+    font-size: 30px;
+    margin: 10px 5px;
+}
+
+.buybutton{
+    align-self: stretch;
+}
+.addtocart{
+    height: 100%;
+    width: 100%;
+    border: 0;
+    background-color: #B721FF;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Styling Founders Section */
 .founderImage{
     height: 50px;
     width: 50px;
