@@ -61,6 +61,33 @@ gap: 15px;
 }
 
 
+#search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    background-color: white;
+    height: 45px;
+    padding: 0 20px;
+}
+
+#searchbar{
+    flex: 1;
+    border: 0;
+background: transparent;
+    outline: none;
+    font-size: 16px;
+}
+
+.searchbutton{
+    border: none;
+    background: transparent;
+}
+
+.searchicon{
+    height: 25px; 
+}
+
 
 /* Styling Nav Bar */
 nav{
@@ -194,8 +221,8 @@ cursor: pointer;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows:30px 1fr;
-    row-gap: 20px;
-    margin-bottom: 40px;
+    row-gap: 50px;
+    margin-bottom: 80px;
 }
 
 .knowfounder{
@@ -238,4 +265,73 @@ cursor: pointer;
 
 /* Styling Footer */
 
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #08AEEA;
+background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+margin-top: 140px;
 
+}
+
+.moreaboutus{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+
+.footerlist{
+    font-size: 16px;
+    list-style-type: none;
+}
+
+.footerheadings{
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: rgb(223, 221, 221);
+    cursor: pointer;
+}
+
+.socialmedia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid rgb(223, 221, 221);
+}
+
+.contactus{
+    font-size: 22px;
+    padding: 5px 0;
+    color: rgb(223, 221, 221);
+
+}
+
+.socialmediaicon{
+display: grid;
+grid-template-columns: repeat(5,40px);
+grid-template-rows: 1fr;
+justify-items: center;
+column-gap: 5px;
+fill: rgb(223, 221, 221);
+}
+
+.sociallogo{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+
+.more1{
+    padding: 15px 0;
+}
+
+.footerli{
+    color: rgb(223, 221, 221);
+cursor: pointer;
+}
