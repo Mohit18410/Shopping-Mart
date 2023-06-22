@@ -7,17 +7,20 @@
 }
 
 
-/* Styling Header */
+/* Styling Header /////////////////////////////////////////////////////////////////////////////////////////////// */
 
 header{
     padding: 18px 0;
     background-color: #21D4FD;
-background-image: linear-gradient(74deg, #21D4FD 0%, #B721FF 100%);
+    background-image: linear-gradient(74deg, #21D4FD 0%, #B721FF 100%);
     display: flex;
-align-items: center;
-gap: 15px;
+    align-items: center;
+    gap: 15px;
 }
 
+
+
+/* Styling Title Box */
 .titlebox{
     flex-basis: 100px;
     display: flex;
@@ -26,25 +29,21 @@ gap: 15px;
     cursor: pointer;
 }
 
-.searchbox{
-    flex-grow: 1;
-    align-self: center;
-}
-
-
-.signbox{
-    flex-basis: 170px;
-    display: flex;
-    justify-content: space-between;
-}
-
 .title{
     font-size: 35px;
-    color: white;
+    color: rgb(255, 255, 255);
 }
+
 .shop{
     height: 30px;
-    fill: white ;
+    fill: rgb(255, 255, 255) ;
+}
+
+
+
+/* Styling Search Bar */
+.searchbox{
+    flex-grow: 1;
 }
 
 #search{
@@ -52,7 +51,7 @@ gap: 15px;
     display: flex;
     align-items: center;
     border-radius: 50px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     height: 45px;
     padding: 0 20px;
 }
@@ -75,6 +74,16 @@ background: transparent;
     height: 25px; 
 }
 
+
+
+/* Styling SignUp , SignIn */
+
+.signbox{
+    flex-basis: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
 #signin,#signup{
     color: rgb(42, 42, 42);
     background-color: #fff;
@@ -86,7 +95,11 @@ background: transparent;
     cursor: pointer;
 }    
 
-/* Styling Nav Bar */
+
+
+/* Styling Nav Bar ////////////////////////////////////////////////////////////////////////////////////// */
+
+
 nav{
     background-color: rgb(245, 245, 245);
 }
@@ -102,6 +115,7 @@ nav{
     padding: 12px;
     display: inline;
     font-size: 18px;
+    text-decoration: none;
     cursor: pointer;
 }
 
@@ -110,7 +124,12 @@ nav{
     background-color: rgb(57, 57, 57);
 }
 
-/* Styling Main Component */
+
+
+/* Styling Main Component ///////////////////////////////////////////////////////////////////////////////// */
+
+
+/* Styling Motto Box */
 
 .mottobox{
     display: grid;
@@ -137,7 +156,10 @@ nav{
     justify-self: stretch;
 }
 
+
+
 /* Styling best selling items */
+
 .productlist{
     display: grid;
     grid-template-columns: 400px 1fr;
@@ -145,18 +167,6 @@ nav{
     row-gap: 30px;
     /* column-gap: 5px; */
     margin-bottom: 60px;
-}
-
-.productbox{
-    background-color:rgb(251, 251, 251);
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2,1fr);
-    cursor: pointer;
-}
-
-.specbox{
-margin-left:20px ;    
 }
 
 .bestsellingitems{
@@ -172,10 +182,25 @@ border-width: 5px;
 cursor: pointer;
 } 
 
+
+/* Styling Content of the Products */
+
+.productbox{
+    background-color:rgb(251, 251, 251);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+    cursor: pointer;
+}
+
 .pname{
     font-size: 30px;
     margin: 10px 5px;
-}        
+}
+
+.specbox{
+margin-left:20px ;    
+}
 
 .spec{
     font-size: 25px;
@@ -201,6 +226,7 @@ cursor: pointer;
 .buybutton{
     align-self: stretch;
 }
+
 .addtocart{
     height: 100%;
     width: 100%;
@@ -212,7 +238,9 @@ cursor: pointer;
     cursor: pointer;
 }
 
-/* Styling Founders Section */
+
+
+/* Styling Founders Section  */
 
 .founder{
     display: grid;
@@ -260,6 +288,7 @@ cursor: pointer;
     padding-left: 50px;
 }
 
+
 /* Styling Footer */
 
 footer{
@@ -271,26 +300,7 @@ margin-top: 140px;
 
 }
 
-.moreaboutus{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 1fr;
-    justify-items: center;
-    line-height: 25px;
-    padding-bottom: 20px;
-}
-
-.footerlist{
-    font-size: 16px;
-    list-style-type: none;
-}
-
-.footerheadings{
-    font-size: 22px;
-    margin-bottom: 5px;
-    color: rgb(223, 221, 221);
-    cursor: pointer;
-}
+/* Styling Contact Us Box  */
 
 .socialmedia{
     display: flex;
@@ -324,11 +334,52 @@ fill: rgb(223, 221, 221);
     width: 30px;
 }
 
+/* Styling More About Us */
+
+.moreaboutus{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+
 .more1{
     padding: 15px 0;
 }
 
+.footerheadings{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: rgb(223, 221, 221);
+    cursor: pointer;
+}
+
+.footerheadingtext{
+    font-size: 26px;
+    font-weight: 700;
+    color: rgb(223, 221, 221);
+    margin-bottom: 5px;
+}
+
+.footerlist{
+    font-size: 16px;
+display: flex;
+flex-direction: column;
+}
+
 .footerli{
+    text-decoration: none;
     color: rgb(223, 221, 221);
 cursor: pointer;
 }
+
+.footerli:hover,.footerheadingtext:hover{
+color: rgb(250, 254, 39);
+}
+
+
+
